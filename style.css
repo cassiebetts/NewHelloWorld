@@ -1,0 +1,34 @@
+html, body {
+  height : 100%;
+  width: 100%;
+}
+
+img {
+position : relative;
+left : 25%;
+top : 25%;
+transform : translate(-50px, -50px);
+animation: fadein 4s;
+/*animation: fadeout 6s;*/
+}
+
+img:hover{
+animation: fadeout 4s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
